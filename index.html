@@ -14,37 +14,68 @@
     <div id="home">
         <h1>Gerenciador de Metas</h1>
         <div id="container">
-            <div class="meta" id="car">
+            <div class="meta" id="cardCar">
                 <img src="assets/driving-license.png" alt="Carteira de Motorista">
-                
                 <span id="metaCardcar" class="metaText"></span>
 
                 <div class="progress-container">
                     <div class="progress-bar" id="progressCardcar"></div>
                 </div>
+
+                <div id="bnt-box">
+                    <div class="donateButton" id="cardCarDonateButton" onclick="abrirInput(donateInputCardcar, cardCarDonateButton)">
+                        <span>Adicionar Saldo</span>
+                    </div>
+
+                    <div class="donateInput" id="donateInputCardcar">
+                        <input type="number" id="inputCardcar" required class="inputDonate">
+                        <button id="addCardcar" onclick="fecharInput(donateInputCardcar, cardCarDonateButton)">Adicionar</button>
+                    </div>
+                </div>
             </div>
 
-            <div class="meta" id="cardCar">
+            <div class="meta" id="car">
                 <img src="assets/hatchback.png" alt="Carro">
-
-                
                 <span id="metaCar" class="metaText"></span>
 
                 <div class="progress-container">
                     <div class="progress-bar" id="progressCar"></div>
                 </div>
+
+                <div id="bnt-box">
+                    <div class="donateButton" id="carDonateButton" onclick="abrirInput(donateInputCar, carDonateButton)">
+                        <span>Adicionar Saldo</span>
+                    </div>
+
+                    <div class="donateInput" id="donateInputCar">
+                        <input type="number" id="inputCar" required class="inputDonate">
+                        <button id="addCar" onclick="fecharInput(donateInputCar, carDonateButton)">Adicionar</button>
+                    </div>
+                </div>
             </div>
 
+            <!-- Meta: Casa (ajustado para o mesmo sistema) -->
             <div class="meta" id="house">
                 <img src="assets/house.png" alt="Casa">
-
-                
                 <span id="metaHouse" class="metaText"></span>
+
                 <div class="progress-container">
                     <div class="progress-bar" id="progressHouse"></div>
+                </div>
+
+                <div id="bnt-box">
+                    <div class="donateButton" id="houseDonateButton" onclick="abrirInput(donateInputHouse, houseDonateButton)">
+                        <span>Adicionar Saldo</span>
+                    </div>
+
+                    <div class="donateInput" id="donateInputHouse">
+                        <input type="number" id="inputHouse" required class="inputDonate">
+                        <button id="addHouse" onclick="fecharInput(donateInputHouse, houseDonateButton)">Adicionar</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </body>
+
 </html>

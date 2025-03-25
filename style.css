@@ -60,6 +60,7 @@ h1 {
     width: 300px;
     height: 300px;
     flex-direction: column;
+    gap: 5px;
 }
 
 .meta img {
@@ -69,7 +70,7 @@ h1 {
 
 .meta:hover {
     border-radius: 20px;
-    box-shadow: 4px 6px 20px rgba(0,0,0,0.5);
+    box-shadow: 4px 6px 20px rgba(0,255,0,0.5);
     transform: scale(1.05);
 }
 
@@ -89,5 +90,53 @@ h1 {
     transition: width 0.5s ease-in-out;
 }
 
-.metaText {
+.meta:hover #bnt-box {
+    height: auto;
+}
+
+#bnt-box {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    transition: 0.5s ease-in-out;
+    flex-direction: column;
+}
+
+.meta:hover .donateButton {
+    padding: 10px 20px 10px 20px;
+    font-size: 1em;
+}
+
+.donateButton {
+    font-size: 0px;
+    border-radius: 10px;
+    padding: 0;
+    background-color: white;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.donateButton:hover {
+    background-color: rgba(0, 255, 0, 0.5);
+    cursor: pointer;
+}
+
+.donateButton input {
+    border: 1px solid rgba(0,0,0,0.5);
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.donateInput {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.inputDonate {
+    padding: 5px;
+    border-radius: 10px;
+    border: 0.5px solid rgba(0,0,0,0.5);
 }
